@@ -24,11 +24,12 @@ Prerequisites
    ```
   mvn clean install
    ```
+## Step 3.
    Execute below maven command to copy all dependencies into an common location, below command copy all dependencies in to location **/home/ist/Desktop/lib/**
    ```
    mvn dependency:copy-dependencies -DoutputDirectory=/home/ist/Desktop/lib/
    ```
-   
+## Step 4.
    Execute below maven command to submit spark job
    ```
    java -cp /home/ist/Desktop/lib/*:./sparkLearning-0.0.1-SNAPSHOT.jar: org.aminfo.spark.sparkLearning.WordCount
