@@ -32,4 +32,4 @@ Prerequisites
    Execute below maven command to submit spark job
    ```
    java -cp /home/ist/Desktop/lib/*:./sparkLearning-0.0.1-SNAPSHOT.jar: org.aminfo.spark.sparkLearning.WordCount
-    ```
+   ```
