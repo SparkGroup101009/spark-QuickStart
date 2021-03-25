@@ -23,8 +23,8 @@ public class WordCount {
 		if (args.length < NumberUtils.INTEGER_ONE) {
 			log.warn("Using default configurations to read input.");
 			args = new String[2];
-			args[0] = "/home/ist/Desktop/ip.csv";
-			args[1] = "/home/ist/Desktop/tt/" + LocalDateTime.now().getMinute();
+			args[0] = "/home/ist/Desktop/data.csv";
+			args[1] = "/home/ist/Desktop/output/" + LocalDateTime.now().getMinute();
 		}
 		log.info("Reading file {}", args[0]);
 		Dataset<String> stringDS = sparkSession.read().textFile(args[0]).as(Encoders.STRING());
